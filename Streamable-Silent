@@ -1,3 +1,6 @@
+local player = game.Players.LocalPlayer
+
+if player:IsInGroup(16298833) then
 local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/topillesrevenge/Streamable-Silent/main/Side"))()
 Aiming.TeamCheck(false)
 
@@ -85,3 +88,8 @@ RunService:BindToRenderStep("AimLock", 0, function()
     
     
         
+    else
+setclipboard("https://www.roblox.com/groups/16298833/synx-clothes#!/about")
+wait(1)
+game.Players.LocalPlayer:Kick("Join the group to use the script, the link was copied to your clipboard!")
+        end
